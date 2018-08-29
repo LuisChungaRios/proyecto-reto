@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { login } from '../actions/sessionActions';
 import { mutePlayback, unmutePlayback } from '../actions/playbackActions';
-import { ButtonStyle, ButtonDarkStyle } from './ButtonStyle';
+const { ButtonStyle, ButtonDarkStyle } = require('./ButtonStyle');
 
 const linkStyle = {
   lineHeight: '30px',
@@ -76,15 +76,23 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
       </div>
     ) : (
       <button className="btn btn--dark" style={{ float: 'right' }} onClick={login}>
-        {/* <style jsx>{ButtonStyle}</style>
-          <style jsx>{ButtonDarkStyle}</style> */}
+        <style jsx global>
+          {ButtonStyle}
+        </style>
+        <style jsx global>
+          {ButtonDarkStyle}
+        </style>
         <FormattedMessage id="login" />
       </button>
     )}
     {session.user ? (
       <div className="playback-control">
-        {/* <style jsx>{ButtonStyle}</style>
-        <style jsx>{ButtonDarkStyle}</style> */}
+        <style jsx global>
+          {ButtonStyle}
+        </style>
+        <style jsx global>
+          {ButtonDarkStyle}
+        </style>
         <style jsx>{`
           .playback-control {
             float: right;
