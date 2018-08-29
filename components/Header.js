@@ -83,8 +83,8 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
     )}
     {session.user ? (
       <div className="playback-control">
-        <style jsx>{ButtonStyle}</style>
-        <style jsx>{ButtonDarkStyle}</style>
+        {/* <style jsx>{ButtonStyle}</style>
+        <style jsx>{ButtonDarkStyle}</style> */}
         <style jsx>{`
           .playback-control {
             float: right;
