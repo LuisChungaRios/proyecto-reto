@@ -29,6 +29,7 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "glob": "^7.1.2",
+    "indeed": "^1.1.0",
     "isomorphic-unfetch": "^2.0.0",
     "module-alias": "^2.0.1",
     "next": "^4.0.0-beta.2",
@@ -36,6 +37,7 @@
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",
     "promise-retry": "^1.1.1",
+    "prop-types": "^15.6.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-intl": "^2.4.0",
@@ -46,6 +48,7 @@
     "socket.io": "^2.0.3",
     "socket.io-client": "^2.0.3",
     "spotify-web-api-node": "^2.5.0",
+    "styled-jsx": "^3.0.2",
     "uuid": "^3.1.0",
     "webpack-bundle-analyzer": "^2.9.0"
   },
